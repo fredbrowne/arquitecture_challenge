@@ -12,20 +12,20 @@ Vamos supor que existam três grandes bases de dados externas que organizam noss
 # Solução:
 ### Base A: Oracle Database 
 
-```bash
+
 Oracle Database fornece uma camada de segurança muito maior por estar a tanto tempo no mercado.
 Já se estabeleceu e é utilizada por grandes empresas a muitos anos, tendo muitas 
 melhorias de segurança e performance já implantados, favorecendo o uso deste DB 
 quando o quesito é segurança e transações por segundo.
-```
+
 
 ### Base B: Postgres
  
-```bash
+
 Como acesso e performance é importante, Postgres oferece múltiplas interfaces de consumo de 
 dados menos engessado como o Oracle Database, se tornando ideal tanto para consumo de 
 aprendizado de máquina como para Big Data.
-```
+
 
 ### Base C: MongoDB
 
@@ -39,11 +39,11 @@ mais rápido a estes dados. Por não conter dados críticos, é uma opção viá
 
 ### Base A: Python
 
-```bash
+
 Python através da lib cx_oracle acessa o Banco A para consumo dos dados. 
 Geralmente utilizando um campo chave que pode ser neste caso o CPF, recupera 
 e retorna em JSON ou qualquer outro formato necessário os dados recuperados.
-```
+
 Exemplo:
 
 ```bash
@@ -73,13 +73,13 @@ Exemplo:
 
 
 ### Base B: Python
-```bash
+
 Python continua sendo uma ótima opção por ser de rápida interpretação, utilizada para trabalhar 
 grandes volumes de dados e também facilitar a leitura do código.
 Conectando ao banco Postgres via psycopg2 é possível trabalhar com os dados necessários 
 e também os exportar em JSON ou da forma como for mais dinâmico para seu consumo.
 No caso, passando a chave CPF, podemos retornar um JSON das informações, como no exemplo da Base A.
-```
+
 Exemplo:
 
 ```bash
@@ -100,13 +100,13 @@ Exemplo:
 
 ### Base C: Python
 
-```bash 
+
 Para trabalhar este DB basta utilizarmos a lib MongoEngine. 
 Em poucas linhas de códigos podemos conectar ao banco e realizar uma 
 query semelhante ao SQL, deixando o seu uso e manutenção simplificado para o time de engenharia.
 Por Python ser tão dinâmico, é possível para os 3 tipos diferentes
  de banco, corresponder a resultados da forma que for mais eficiente para seu consumo.
-```
+
 # 4-	Disponibilização dos Dados
 
 Podemos disponibilizar cada informação agregada com um microserviço em Flask que recupera estas informações. Sua disponibilização pode ser feita de diversas maneiras como retornar um JSON das informações compiladas seja de 3, 2 ou 1 banco apenas.
