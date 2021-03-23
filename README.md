@@ -109,7 +109,7 @@ Dependendo do uso final, é possível trabalhar diferentes endpoints para dispon
 SOAP (xml)
 REST (json)
 ```
-Estes dois meios são os comuns entre serviços e brandamente aceitos para consumo em diferentes sistemas.
+Estes dois meios são comuns entre serviços e brandamente aceitos para consumo em diferentes sistemas.
 
 ##
 \
