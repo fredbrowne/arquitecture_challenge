@@ -103,7 +103,7 @@ Por Python ser tão dinâmico, é possível para os 3 tipos diferentes
 # 4-	Disponibilização dos Dados
 
 Podemos disponibilizar cada informação agregada com um microserviço em Flask que recupera estas informações. Sua disponibilização pode ser feita de diversas maneiras como retornar um JSON das informações compiladas seja de 3, 2 ou 1 banco apenas.
-Dependendo do uso final, é possível trabalhar diferentes endpoints para disponibilização dos dados como:
+Dependendo do uso final, é possível trabalhar diferentes endpoints para disponibilização dos dados utilizando arquiteturas como:
 
 ```bash
 SOAP (xml)
