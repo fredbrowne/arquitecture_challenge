@@ -53,17 +53,19 @@ Exemplo:
 	“name”: “John Doe”,
 	“address”: “Rua das Araucárias 620”,
 	“debts”: [
-			{“id”: 1,
-			“status”: “Ativa”,
-			“value”: 1000.67,
-			“company”: “SUBMARINO VIAGENS LTDA”,
-			“cnpj”: 06179342000105,}
+			{
+				“id”: 1,
+				“status”: “Ativa”,
+				“value”: 1000.67,
+				“company”: “SUBMARINO VIAGENS LTDA”,
+				“cnpj”: 06179342000105}
 
-			{“id”: 2,
-			“status”: “Ativa”,
-			“value”: 367.56,
-			“company”: “C&A MODAS S.A”,
-			“cnpj”: 45242914017253}
+				{“id”: 2,
+				“status”: “Ativa”,
+				“value”: 367.56,
+				“company”: “C&A MODAS S.A”,
+				“cnpj”: 45242914017253
+			}
 		]
 }	
 
@@ -86,12 +88,12 @@ Exemplo:
 	“age”: 26,
 	“assets_properties”: [
 				{
-					“type”: “car”
-					“market_value”: 30000
+					“type”: “car”,
+					“market_value”: 30000,
 					“acquisition_year”: 2017
-				}
+				},
 	“address”: “Rua das Araucárias 620”,
-	“income_value”: 4300
+	“income_value”: 4300,
 	“source_income”: “salary”
 }
 ```
