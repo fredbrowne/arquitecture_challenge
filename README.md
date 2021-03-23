@@ -18,27 +18,21 @@ Já se estabeleceu e é utilizada por grandes empresas a muitos anos, tendo muit
 melhorias de segurança e performance já implantados, favorecendo o uso deste DB 
 quando o quesito é segurança e transações por segundo.
 
-
 ### Base B: Postgres
- 
 
 Como acesso e performance é importante, Postgres oferece múltiplas interfaces de consumo de 
 dados menos engessado como o Oracle Database, se tornando ideal tanto para consumo de 
 aprendizado de máquina como para Big Data.
 
-
 ### Base C: MongoDB
 
-```bash
 NoSQL supera Oracle DB e Postgres em velocidade mas não oferece um sistema de segurança tão 
 forte quanto os banco de dados relacionais e por isso mesmo é possível fazer um acesso muito 
 mais rápido a estes dados. Por não conter dados críticos, é uma opção viável.
-```
 
 # 3-	Tráfego
 
 ### Base A: Python
-
 
 Python através da lib cx_oracle acessa o Banco A para consumo dos dados. 
 Geralmente utilizando um campo chave que pode ser neste caso o CPF, recupera 
@@ -99,7 +93,6 @@ Exemplo:
 ```
 
 ### Base C: Python
-
 
 Para trabalhar este DB basta utilizarmos a lib MongoEngine. 
 Em poucas linhas de códigos podemos conectar ao banco e realizar uma 
